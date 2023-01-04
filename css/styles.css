@@ -191,6 +191,11 @@ img {
     margin: -1px;
 }
 
+.filter-item:hover,
+.filter-item:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .filter-list {
     display: flex;
     flex-direction: row;
@@ -337,6 +342,11 @@ img {
     padding-right: 16px;
 }
 
+.social-icon:hover,
+.social-icon:focus {
+    background-color: var(--button-text-color);
+}
+
 /* Studio title */
 .about-item {
     margin-left: 24px;
@@ -375,6 +385,11 @@ img {
     margin-left: 24px;
 }
 
+.team-card:hover,
+.team-card:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .team-card:first-child {
     margin-left: 0;
 }
@@ -387,6 +402,11 @@ img {
 
 .project-link {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.project-card:hover,
+.project-card:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .project-card {
@@ -431,28 +451,37 @@ img {
     margin-bottom: 12px;
 }
 /* --CUSTOMERS-- */
-.company {
-    justify-content: space-between;
+.customers-list {
+   display: flex;
+   gap: 24px;
 }
 
-.company-icon {
-    border: 1px solid var(--subtle-text-color);
-    border-radius: 4px;
-    margin: left 24px;
+.customers-item {
+    width: calc((100% - 120px) / 6);
+    height: 88px;
 }
 
- .company-link {
+.customers-item:first-child {
+    margin-left: 0;
+}
+
+.customers-link {
+    width: 168px;
+    height: 88px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 168px;
-    height: 88px;
+    border: 1px solid var(--subtle-text-color);
+    border-radius: 4px;
+    margin-left: 24px;
     fill: var(--subtle-text-color);
- }
+ } 
 
- .company-link:hover,
- .company-link:focus {
-    fill: var(--primary-brand-color);
+.customers-link:hover,
+.customers-link:focus,
+.customers-link:active {
+    fill: var(--primary-brand-color); 
+    border-color: var(--primary-brand-color);
  }
 
 /* FOOTER */
@@ -466,6 +495,10 @@ footer {
 .footer-item {
     display: inline-block;
     margin-left: 16px;
+}
+
+.footer-item:first-child {
+    margin-left: 0;
 }
 
 .footer-icon {
