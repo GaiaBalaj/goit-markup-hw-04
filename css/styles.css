@@ -407,7 +407,7 @@ img {
 
 .card-description {
     padding: 32px 16px;
-    border: 0.5px solid #F4F4FD;
+    border: 0.5px solid var(--background-light-color);
     border-top: none;
     
 }
@@ -447,6 +447,12 @@ img {
     align-items: center;
     width: 168px;
     height: 88px;
+    fill: var(--subtle-text-color);
+ }
+
+ .company-link:hover,
+ .company-link:focus {
+    fill: var(--primary-brand-color);
  }
 
 /* FOOTER */
@@ -457,11 +463,15 @@ footer {
     align-items: center;
 }
 
+.footer-item {
+    display: inline-block;
+    margin-left: 16px;
+}
+
 .footer-icon {
     display: inline-flex;
     flex-direction: column;
-    
-}
+} 
 
 .footer-title {
     font-weight: 600;
@@ -488,6 +498,12 @@ footer {
     height: 40px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.footer-link:hover, 
+.footer-link:focus {
+    background-color: #31D0AA;
 }
 
 .footer-text {
