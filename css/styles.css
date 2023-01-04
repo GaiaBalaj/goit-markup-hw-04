@@ -458,7 +458,7 @@ img {
     height: 88px;
 }
 
-.customers-item:first-child {
+.customers-link:first-child {
     margin-left: 0;
 }
 
